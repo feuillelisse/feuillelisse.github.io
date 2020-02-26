@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "sunrise" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "en-US"
 title                    : "feuillelisse"
 title_separator          : "|"
-subtitle                 : "Be the best version of yourself"
+subtitle                 : "being different isn't a bad thing, it means, you're brave enough to be yourself -Luna Lovegood"
 name                     : "feuillelisse"
 description              : "Sang Swastamita"
 url                      : "https://feuillelisse.github.io/"
@@ -108,8 +108,8 @@ analytics:
 # Site Author
 author:
   name             : "Nisa Shadrina"
-  avatar           : "img/white.png"
-  bio              : "Care about yourself"
+  avatar           : "img/black.png"
+  bio              : "Be the best version of yourself"
   location         : "It's a Secret"
   email            :
   links:
