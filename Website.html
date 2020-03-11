@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script>
+     $(document).ready(function(){
+        $.getJSON('beritaterkini.json', function(baru){
+            var data_terkini = '';
+            var i = 1;
+            data_terkini += "<table border='1'><tr><td>No</td><td>Kategori</td><td>Judul Artikel</td><td>Tanggal</td><td>Waktu</td></tr>";
+            $.each(baru, function(key, value){
+                data_terkini += '<tr>';
+                data_terkini += '<td>'+i+'</td>';
+                data_terkini += '<td>'+value.kategori+'</td>'
+                data_terkini += '<td>'+value.judul+'</td>'
+                data_terkini += '<td>'+value.date+'</td>'
+                data_terkini += '<td>'+value.time+'</td>'
+                data_terkini += '</tr>';
+                i = i + 1;
+            });
+            $('#berita').append(data_terkini);
+        });
+    });
+</script>
+<body>
+    <h1>Headline Republika Online</h1>
+    <div id = "berita"></div>
+</body>
+</html>
